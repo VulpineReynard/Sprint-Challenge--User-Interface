@@ -171,18 +171,14 @@ header nav a {
     background: dodgerblue;
 }
 
+/*---HOME PAGE BOTTOM CONTENT---*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
 }
 
 footer {
@@ -209,6 +205,7 @@ footer nav a {
     border-bottom: 1px dashed black;
 }
 
+/*Main Content Container for About Page*/
 .aboutMain {
     display: flex;
     flex-wrap: wrap;
@@ -225,7 +222,7 @@ div.aboutMain section {
     padding-bottom: 20px;
 }
 
-
+/*Properties for "Learn More" Buttons*/
 div.aboutMain section button {
     width: 105px;
     margin-top: 15px;
