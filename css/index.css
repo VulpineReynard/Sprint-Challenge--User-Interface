@@ -71,6 +71,31 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+.jumbo {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -95,12 +120,14 @@ p {
     margin-bottom: 0;
 }
 
+/*-----Properties for all boxes simultaneously-----*/
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+/*-----Properties for each box individually-----*/
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -112,18 +139,46 @@ p {
     justify-content: center;
 }
 
+/*-----Properties for each box individually, will overwrite the above-----*/
+#box1 {
+    background: teal;
+}
+#box2 {
+    background: gold;
+}
+#box3 {
+    background: cadetblue;
+}
+#box4 {
+    background: coral;
+}
+#box5 {
+    background: crimson;
+}
+#box6 {
+    background: forestgreen;
+}
+#box7 {
+    background: darkorchid;
+}
+#box8 {
+    background: hotpink;
+}
+#box9 {
+    background: indigo;
+}
+#box10 {
+    background: dodgerblue;
+}
+
+/*---HOME PAGE BOTTOM CONTENT---*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
 }
 
 footer {
@@ -143,4 +198,92 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about {
+    padding: 20px;
+    border-bottom: 1px dashed black;
+}
+
+/*Main Content Container for About Page*/
+.aboutMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+/*-----Properties for all sections simultaneously-----*/
+div.aboutMain section {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+}
+
+/*Properties for "Learn More" Buttons*/
+div.aboutMain section button {
+    width: 105px;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 7px;
+    background: white;
+}
+
+/*-----Bottom Two  Sections-----*/
+div.aboutMain section.bottomBox {
+    padding-top: 60px;
+}
+
+div.aboutMain section h2 {
+    margin-top: 10px;
+}
+
+.aboutBottomContent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    width: 95%;
+}
+
+/* Animation for contact-title */
+#contact-title {
+    animation-name: slidein;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 800px; 
+    }
+    to {
+        margin-right: 100%;
+        width: 100%;
+    }
+}
+
+div.contact-section {
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+form.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form.contact-form label {
+    margin-top: 5px;
 }
