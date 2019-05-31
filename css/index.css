@@ -91,6 +91,11 @@ header nav a {
     align-self: flex-end;
 }
 
+.jumbo {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
