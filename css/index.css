@@ -120,13 +120,14 @@ header nav a {
     margin-bottom: 0;
 }
 
+/*-----Properties for all boxes simultaneously-----*/
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-/*-----Properties for all boxes simultaneously-----*/
+/*-----Properties for each box individually-----*/
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -138,7 +139,7 @@ header nav a {
     justify-content: center;
 }
 
-/*-----Properties for each box individually-----*/
+/*-----Properties for each box individually, will overwrite the above-----*/
 #box1 {
     background: teal;
 }
@@ -215,6 +216,7 @@ footer nav a {
     margin-top: 25px;
 }
 
+/*-----Properties for all sections simultaneously-----*/
 div.aboutMain section {
     width: 46%;
     display: flex;
@@ -222,6 +224,7 @@ div.aboutMain section {
     border-bottom: 1px dashed black;
     padding-bottom: 20px;
 }
+
 
 div.aboutMain section button {
     width: 105px;
@@ -232,6 +235,7 @@ div.aboutMain section button {
     background: white;
 }
 
+/*-----Bottom Two  Sections-----*/
 div.aboutMain section.bottomBox {
     padding-top: 60px;
 }
