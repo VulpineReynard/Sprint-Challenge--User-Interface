@@ -252,3 +252,37 @@ div.aboutMain section h2 {
     margin-bottom: 45px;
     width: 95%;
 }
+
+#contact-title {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 800px; 
+    }
+    to {
+        margin-right: 100%;
+        width: 100%;
+    }
+}
+
+div.contact-section {
+    margin: auto;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+form.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
