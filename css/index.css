@@ -222,3 +222,29 @@ div.aboutMain section {
     border-bottom: 1px dashed black;
     padding-bottom: 20px;
 }
+
+div.aboutMain section button {
+    width: 105px;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 7px;
+    background: white;
+}
+
+div.aboutMain section.bottomBox {
+    padding-top: 60px;
+}
+
+div.aboutMain section h2 {
+    margin-top: 10px;
+}
+
+.aboutBottomContent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    width: 95%;
+}
